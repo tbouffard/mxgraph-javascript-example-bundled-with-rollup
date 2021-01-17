@@ -3,7 +3,7 @@
 <head lang='en'>
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width'>
-	<title>rollup-starter-app</title>
+	<title>mxGraph bundled by Rollup</title>
 
 	<style>
 		body {
@@ -11,11 +11,19 @@
 			color: #333;
 			font-weight: 300;
 		}
+		#graph-container {
+			left: 10px;
+			width: 500px;
+			height: 500px;
+			border: gray 1px solid;
+			overflow: hidden;
+		}
 	</style>
 </head>
 <body>
-	<h1>rollup-starter-app</h1>
-	<p>The time is <span id='time-now'>...</span></p>
+	<h1>mxGraph Javascript example bundled by Rollup</h1>
+	<p>Display a test graph.</p>
+	<div id="graph-container"></div>
 	<script src='bundle.js'></script>
 </body>
 </html>

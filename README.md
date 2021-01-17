@@ -1,8 +1,12 @@
-# rollup-starter-app
+# mxgraph-javascript-example-bundled-with-rollup
+
+Example of javascript application using the mxGraph npm package and bundled with Rollup
+
+
+Created from the [rollup-starter-app](https://github.com/rollup/rollup-starter-app) template, commit [3a67308](https://github.com/rollup/rollup-starter-app/tree/3a67308dc65f2ccd9cbc3e2ce5e3144c304ab1e9)
+
 
 This repo contains a bare-bones example of how to create an application using Rollup, including importing a module from `node_modules` and converting it from CommonJS.
-
-*See also https://github.com/rollup/rollup-starter-lib*
 
 
 ## Getting started

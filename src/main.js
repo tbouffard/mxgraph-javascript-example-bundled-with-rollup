@@ -1,9 +1,12 @@
-import {mxGraph, mxConstants} from './mxgraph-loader.js';
+import {mxClient, mxConstants, mxGraph} from './mxgraph-loader.js';
 import {registerCustomShapes} from "./custom-shapes";
 
 // even though Rollup is bundling all your files together, errors and
 // logs will still point to your original source modules
-console.log('if you have sourcemaps enabled in your devtools, click on main.js:5 -->');
+console.info('If you have sourcemaps enabled in your devtools, click on main.js -->');
+
+console.info('Using mxGraph', mxClient.VERSION);
+displayMxgraphVersionInPageFooter();
 
 registerCustomShapes();
 
@@ -20,4 +23,9 @@ try {
     graph.insertVertex(parent, null, 'a custom ellipse', 150, 350, 70, 70, 'shape=customEllipse');
 } finally {
     model.endUpdate();
+}
+
+function displayMxgraphVersionInPageFooter() {
+    const footer = document.querySelector('footer');
+    footer.innerText = `Using mxGraph@${mxClient.VERSION}`;
 }

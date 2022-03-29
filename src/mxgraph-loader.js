@@ -1,6 +1,7 @@
 import factory from 'mxgraph';
 
 export const {
+    mxClient,
     mxConstants,
     mxGraph,
     // To extend shapes

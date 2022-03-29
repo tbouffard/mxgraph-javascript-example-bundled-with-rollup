@@ -8,7 +8,7 @@ Created from the [rollup-starter-app](https://github.com/rollup/rollup-starter-a
 
 ## Getting started
 
-Clone this repository and install its dependencies (tested with Node 12):
+Clone this repository and install its dependencies (tested with Node 16):
 
 ```bash
 git clone https://github.com/tbouffard/mxgraph-javascript-example-bundled-with-rollup.git
